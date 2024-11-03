@@ -38,10 +38,10 @@
       }
     </style>
   </head>
-  <body>
-    <header>
+  <body class="bg-neutral-100">
+    <header class="mx-4 lg:mx-10">
       <!--navbar-->
-      <div class="navbar text-4xl bg-gray-100 px-20">
+      <div class="navbar text-4xl px-4 lg:px-16">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -92,7 +92,9 @@
       <div class="carousel w-full max-h-96">
         <!--slide 1-->
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="flex sm:flex-col lg:flex-row p-4 lg:p-24 bg-slate-300 items-center gap-24">
+          <div
+            class="flex flex-col lg:flex-row p-4 lg:p-24 bg-slate-300 items-center gap-24"
+          >
             <div class="space-y-10">
               <h1 class="text-7xl">R1 5 honda</h1>
               <p>
@@ -117,9 +119,25 @@
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img
-            src="biker-zone-resources/images/slider/bike2.png"
-            class="w-full"
+          <div
+            class="flex flex-col lg:flex-row p-4 lg:p-24 bg-slate-300 items-center gap-24"
+          >
+            <div class="space-y-10">
+              <h1 class="text-7xl">R1 5 honda</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore asperiores nobis fugiat at repellendus ad iusto libero
+                delectus illum dolorem?
+              </p>
+              <button class="text-2xl btn btn-error">Purchase</button>
+            </div>
+            <div>
+              <img
+                src="biker-zone-resources/images/slider/bike2.png"
+                class="w-full"
+              />
+            </div>
+          </div>
           />
           <div
             class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
@@ -129,9 +147,25 @@
           </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-          <img
-            src="biker-zone-resources/images/slider/bike3.png"
-            class="w-full"
+          <div
+            class="flex flex-col lg:flex-row p-4 lg:p-24 bg-slate-300 items-center gap-24"
+          >
+            <div class="space-y-10">
+              <h1 class="text-7xl">R1 5 honda</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore asperiores nobis fugiat at repellendus ad iusto libero
+                delectus illum dolorem?
+              </p>
+              <button class="text-2xl btn btn-error">Purchase</button>
+            </div>
+            <div>
+              <img
+                src="biker-zone-resources/images/slider/bike3.png"
+                class="w-full"
+              />
+            </div>
+          </div>
           />
           <div
             class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
@@ -141,9 +175,25 @@
           </div>
         </div>
         <div id="slide4" class="carousel-item relative w-full">
-          <img
-            src="biker-zone-resources/images/slider/bike4.png"
-            class="w-full"
+          <div
+            class="flex flex-col lg:flex-row p-4 lg:p-24 bg-slate-300 items-center gap-24"
+          >
+            <div class="space-y-10">
+              <h1 class="text-7xl">R1 5 honda</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore asperiores nobis fugiat at repellendus ad iusto libero
+                delectus illum dolorem?
+              </p>
+              <button class="text-2xl btn btn-error">Purchase</button>
+            </div>
+            <div>
+              <img
+                src="biker-zone-resources/images/slider/bike1.png"
+                class="w-full"
+              />
+            </div>
+          </div>
           />
           <div
             class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
@@ -154,7 +204,76 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <!--features-->
+      </section>
+      <section class="my-10">
+        <h1 class="text-4xl text-center">Latest Bike</h1>
+        <div class=" grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-5">
+          <!--first latest bike-->
+          <div class="card  bg-neutral-300 shadow-xl">
+            <figure>
+              <img
+                src="biker-zone-resources/images/others/latest1.png"
+                alt="Bike"
+              />
+            </figure>
+            <div class=" card-body">
+              <h2 class="card-title text-2xl">Bike latest style new</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus aliquam veritatis impedit, at iure beatae nisi nam
+                unde modi nobis!
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!--second latest bike-->
+          <div class="card bg-neutral-300 shadow-xl">
+            <figure>
+              <img
+                src="biker-zone-resources/images/others/latest2.png"
+                alt="Bike"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl">Bike latest style new</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus aliquam veritatis impedit, at iure beatae nisi nam
+                unde modi nobis!
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!--third latest bike-->
+          <div class="card bg-neutral-300 shadow-xl">
+            <figure>
+              <img
+                src="biker-zone-resources/images/others/latest3.png"
+                alt="Bike"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl">Bike latest style new</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus aliquam veritatis impedit, at iure beatae nisi nam
+                unde modi nobis!
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
