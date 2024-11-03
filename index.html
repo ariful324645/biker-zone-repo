@@ -16,7 +16,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              text-color: "#da373d",
             },
           },
         },
@@ -34,13 +34,14 @@
         font-family: "Poppins", serif;
         font-weight: 400;
         font-style: normal;
+        'text-color':rgba(231,111,81,0.10) ;
       }
     </style>
   </head>
   <body>
     <header>
       <!--navbar-->
-      <div class="navbar text-4 bg-slate-300 px-20 text-orange-50">
+      <div class="navbar text-4xl bg-gray-100 px-20">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -87,70 +88,68 @@
           <button class="btn btn-error text-2xl text-white">Button</button>
         </div>
       </div>
-      <!--carosoul from daisy ui-->
-      <div class="flex flex-col lg:flex-row gap-24 items-center p-4px lg:p-40">
-        <div class="space-y-10">
-          <h1 class="text-4xl">
-            Ride on R1 <br />
-            v4 with smile
-          </h1>
-
-          <p class="text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            dolorum doloribus cupiditate? Impedit, magni ducimus suscipit error
-            quibusdam distinctio corrupti?
-          </p>
-          <button class="btn btn-error text-2xl">Purchase</button>
+      <!--slider and carosel-->
+      <div class="carousel w-full max-h-96">
+        <!--slide 1-->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="flex sm:flex-col lg:flex-row p-4 lg:p-24 bg-slate-300 items-center gap-24">
+            <div class="space-y-10">
+              <h1 class="text-7xl">R1 5 honda</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore asperiores nobis fugiat at repellendus ad iusto libero
+                delectus illum dolorem?
+              </p>
+              <button class="text-2xl btn btn-error">Purchase</button>
+            </div>
+            <div>
+              <img
+                src="biker-zone-resources/images/slider/bike1.png"
+                class="w-full"
+              />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
         </div>
-
-        <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img
-              src="biker-zone-resources/images/slider/bike1.png"
-              class="w-full"
-            />
-            <div
-              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-            >
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
-            </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="biker-zone-resources/images/slider/bike2.png"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="biker-zone-resources/images/slider/bike2.png"
-              class="w-full"
-            />
-            <div
-              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-            >
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="biker-zone-resources/images/slider/bike3.png"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img
-              src="biker-zone-resources/images/slider/bike3.png"
-              class="w-full"
-            />
-            <div
-              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-            >
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide4" class="carousel-item relative w-full">
-            <img
-              src="biker-zone-resources/images/slider/bike4.png"
-              class="w-full"
-            />
-            <div
-              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-            >
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="biker-zone-resources/images/slider/bike4.png"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
         </div>
       </div>
